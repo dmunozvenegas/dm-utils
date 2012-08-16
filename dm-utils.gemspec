@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'dm-utils'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.date        = '2012-08-16'
   s.summary     = "Contiene extensiones a datamapper"
   s.description = "Contiene extensiones a datamapper"

@@ -9,7 +9,7 @@ module DataMapper
 
 	    	module ClassMethods
 	   			def constant_name(const , value)
-	      			.class_eval{ const_get(const) }[value - 1].to_s.capitalize
+	      			self.class_eval{ const_get(const) }[value - 1].to_s.capitalize
 	   			end
 
 	  		end

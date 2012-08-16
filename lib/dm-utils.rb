@@ -6,7 +6,7 @@ module DataMapper
 	   	def self.included(model)
 	      model.extend ClassMethods
 	    end
-
+	    	#TODO: Agregar mas opciones
 	    	module ClassMethods
 	   			def constant_name(const , value)
 	      			self.class_eval{ const_get(const) }[value - 1].to_s.capitalize

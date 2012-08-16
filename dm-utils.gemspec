@@ -6,7 +6,11 @@ Gem::Specification.new do |s|
   s.description = "Contiene extensiones a datamapper"
   s.authors     = ["Sandro Gomez"]
   s.email       = 'sandro.gomez@kiit.cl'
-  s.files       = ["lib/dm-utils.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/hola'
+  
+  s.files         = Dir["{lib}/**/*"]
+  #s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.require_paths = ["lib"]
+
+  s.add_dependency('rails',   '>= 3.0.0')
+  s.add_dependency('dm-core', '>= 1.0.0')
 end
